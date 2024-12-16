@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfraRepair Technologies - Project Overview</title>
+    <link rel="icon" href="logo.png" type="image/png">
+    <style>
+        /* CSS Global */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #00b140, #003366); /* Dégradé futuriste */
+            background-size: 400% 400%;
+            animation: gradient 10s ease infinite; /* Animation du dégradé */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        /* Animation pour le fond futuriste */
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* La barre en haut qui contient tout */
+        header {
+            background-color: rgba(0, 75, 110, 0.9); /* Fond du header */
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed; /* Fixer la barre en haut de la page */
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        header img {
+            width: 60px;
+            height: auto;
+        }
+
+        /* Nom de l'entreprise sur la bande en haut */
+        .company-name {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+
+        /* Menu de navigation aligné sur la ligne */
+        nav {
+            display: flex;
+            gap: 40px; /* Augmenter l'espacement pour éviter que le texte soit coupé */
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 20px; /* Élargir les zones cliquables */
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #00b140;
+        }
+
+        /* Section principale */
+        .content {
+            margin-top: 80px; /* Décalage pour ne pas que le contenu soit caché derrière le header */
+            padding: 20px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Centrer verticalement le contenu */
+            align-items: center; /* Centrer horizontalement le contenu */
+            width: 100%; /* Assurer que le contenu prend toute la largeur */
+            text-align: center; /* Centrer le texte */
+        }
+
+        /* Bloc des sections avec texte et image côte à côte */
+        .section {
+            background-color: rgba(0, 0, 0, 0.6); /* Fond légèrement sombre pour les sections */
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Centrer le contenu dans chaque section */
+            text-align: center;
+            flex-direction: column; /* Disposer les éléments (texte et image) en colonne */
+        }
+
+        .section img {
+            width: 180px; /* Taille des images ajustée */
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px; /* Espacement entre l'image et le texte */
+        }
+
+        .section h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .section p {
+            font-size: 18px;
+            line-height: 1.6;
+            max-width: 600px; /* Limiter la largeur du texte pour une meilleure lisibilité */
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsivité pour mobile */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav a {
+                padding: 10px;
+                width: 100%;
+            }
+
+            .section {
+                flex-direction: column;
+                padding: 15px;
+                margin-bottom: 30px;
+            }
+
+            .section img {
+                width: 100px;
+            }
+
+            .section h2 {
+                font-size: 20px;
+            }
+
+            .section p {
+                font-size: 16px;
+                max-width: 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="company-name">InfraRepair Technologies</div>
+        <nav>
+            <a href="accueil.html">Home</a>
+            <a href="a propos de nous.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h1>Project Overview</h1>
+        <p>At InfraRepair Technologies, we focus on utilizing the most advanced technologies to improve infrastructure repair and maintenance across the globe. Below are the key innovations driving our projects.</p>
+
+        <!-- Section 1: Goudron Tissulaire -->
+        <div class="section">
+            <img src="goudron_tissulaire.jpg" alt="Goudron Tissulaire">
+            <div>
+                <h2>Goudron Tissulaire</h2>
+                <p>Our use of tissular asphalt is revolutionizing how roads are repaired. By mimicking the regenerative processes found in biological tissue, we provide durable, sustainable repairs that last longer and are more environmentally friendly.</p>
+            </div>
+        </div>
+
+        <!-- Section 2: Plaques Chauffantes -->
+        <div class="section">
+            <img src="plaques_chauffantes.jpg" alt="Heated Plates for Road Repair">
+            <div>
+                <h2>Heated Plates for Road Repair</h2>
+                <p>We employ advanced heating technology to repair roads more efficiently. The heated plates can quickly fix cracks and surface damage, saving both time and resources.</p>
+            </div>
+        </div>
+
+        <!-- Section 3: Carte du Monde des Routes -->
+        <div class="section">
+            <img src="carte_monde_routes.jpg" alt="Global Road Map">
+            <div>
+                <h2>Global Road Map</h2>
+                <p>Our satellite-powered global road map enables us to monitor road conditions worldwide. This system provides real-time data for maintenance and repair scheduling, helping us stay ahead of critical repairs.</p>
+            </div>
+        </div>
+
+        <!-- Section 4: Satellite Technology -->
+        <div class="section">
+            <img src="satellite_technology.jpg" alt="Satellite Technology">
+            <div>
+                <h2>Satellite Monitoring Technology</h2>
+                <p>Using state-of-the-art satellite technology, we can detect infrastructure damage before it becomes a problem. This early-warning system allows us to respond quickly, ensuring safer roads for everyone.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 InfraRepair Technologies. All rights reserved.</p>
+    </footer>
+</body>
+</html>

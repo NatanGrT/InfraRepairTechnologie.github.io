@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - InfraRepair Technologies</title>
+    <link rel="icon" href="logo.png" type="image/png">
+    <style>
+        /* CSS Global */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #00b140, #003366); /* Dégradé futuriste */
+            background-size: 400% 400%;
+            animation: gradient 10s ease infinite; /* Animation du dégradé */
+        }
+
+        /* Animation pour le fond futuriste */
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* La barre en haut qui contient tout */
+        header {
+            background-color: rgba(0, 75, 110, 0.9); /* Fond du header */
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between; /* Espacement entre le logo + nom et le menu */
+            align-items: center;
+            position: fixed; /* Fixer la barre en haut de la page */
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        header img {
+            width: 60px;
+            height: auto;
+        }
+
+        /* Le nom de l'entreprise juste à côté du logo */
+        .company-name {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            margin-left: 10px; /* Espacement minimal entre l'image et le texte */
+        }
+
+        /* Menu de navigation aligné sur la ligne */
+        nav {
+            display: flex;
+            gap: 40px; /* Augmenter l'espacement entre les liens du menu */
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 20px; /* Élargir les zones cliquables */
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #00b140;
+        }
+
+        /* Ajout du contenu principal au-dessous de la barre de navigation */
+        .content {
+            margin-top: 100px; /* Décalage pour ne pas que le contenu soit caché derrière le header */
+            padding: 20px;
+            color: white;
+        }
+
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.6); /* Fond semi-transparent pour chaque section */
+            border-radius: 10px;
+            margin: 10px;
+        }
+
+        .cta-button {
+            background-color: #00b140;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #007a3d;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsivité pour mobile */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                padding: 10px;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="display: flex; align-items: center;">
+            <img src="logo.png" alt="InfraRepair Technologies">
+            <span class="company-name">InfraRepair Technologies</span>
+        </div>
+        <nav>
+            <a href="accueil.html">Home</a>
+            <a href="project.html">Project</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <!-- Section de présentation de l'entreprise -->
+        <section id="who-are-we" class="section">
+            <h2>Who Are We?</h2>
+            <p>InfraRepair Technologies is a leading company specializing in the repair and maintenance of infrastructure using advanced and innovative technologies. We are dedicated to providing high-quality services to our clients, ensuring that their systems are always in top condition. Our team is made up of experts who combine years of experience with the latest industry knowledge to deliver optimal results.</p>
+        </section>
+
+        <!-- Section sur les valeurs et l'innovation -->
+        <section id="our-values" class="section">
+            <h2>Our Values</h2>
+            <p>At InfraRepair Technologies, we value excellence, innovation, and customer satisfaction. Our approach is focused on achieving the best outcomes for our clients through reliable services and cutting-edge technology. We are constantly exploring new ways to improve and streamline our repair processes, ensuring that we remain at the forefront of the industry.</p>
+        </section>
+
+        <!-- Section sur la technologie innovante utilisée par l'entreprise -->
+        <section id="new-tech" class="section">
+            <h2>Innovative Technology</h2>
+            <p>We leverage state-of-the-art technology to provide our clients with efficient, effective, and long-lasting repairs. Our advanced tools and methodologies ensure that we meet the unique needs of each project, whether large or small. Our focus on innovation allows us to deliver solutions that are both sustainable and cutting-edge.</p>
+        </section>
+
+        <!-- Appel à l'action pour entrer en contact -->
+        <section id="cta" class="section">
+            <h2>Ready to Experience Excellence?</h2>
+            <p>If you’re looking for reliable and efficient infrastructure repair solutions, we’re here to help. Get in touch with us today and discover how our team can support your needs.</p>
+            <a href="#contact" class="cta-button">Contact Us</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 InfraRepair Technologies. All rights reserved.</p>
+    </footer>
+</body>
+</html>

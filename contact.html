@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfraRepair Technologies - Contact</title>
+    <link rel="icon" href="logo.png" type="image/png">
+    <style>
+        /* CSS Global */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #00b140, #003366); /* Dégradé futuriste */
+            background-size: 400% 400%;
+            animation: gradient 10s ease infinite; /* Animation du dégradé */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        /* Animation pour le fond futuriste */
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* La barre en haut qui contient tout */
+        header {
+            background-color: rgba(0, 75, 110, 0.9); /* Fond du header */
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed; /* Fixer la barre en haut de la page */
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        header img {
+            width: 60px;
+            height: auto;
+        }
+
+        /* Nom de l'entreprise sur la bande en haut */
+        .company-name {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+
+        /* Menu de navigation aligné sur la ligne */
+        nav {
+            display: flex;
+            gap: 40px; /* Augmenter l'espacement pour éviter que le texte soit coupé */
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 20px; /* Élargir les zones cliquables */
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #00b140;
+        }
+
+        /* Dropdown Menu */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #575757;
+        }
+
+        /* Section principale */
+        .content {
+            margin-top: 80px; /* Décalage pour ne pas que le contenu soit caché derrière le header */
+            padding: 20px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Centrer verticalement le contenu */
+            align-items: center; /* Centrer horizontalement le contenu */
+            width: 100%; /* Assurer que le contenu prend toute la largeur */
+            text-align: center; /* Centrer le texte */
+        }
+
+        /* Formulaire de contact */
+        .contact-form {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 600px; /* Limiter la taille du formulaire */
+            text-align: left;
+        }
+
+        .contact-form h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #333;
+            border-radius: 5px;
+            background-color: #222;
+            color: white;
+            font-size: 16px;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            height: 150px;
+        }
+
+        .contact-form button {
+            background-color: #00b140;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #003366;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="company-name">InfraRepair Technologies</div>
+        <nav>
+            <a href="accueil.html">Home</a>
+            <a href="a propos de nous.html">About Us</a>
+            <a href="project.html">Project</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h1>Contact Us</h1>
+        <p>If you have any questions or would like to know more about our projects and services, feel free to reach out to us using the form below. We look forward to hearing from you!</p>
+
+        <!-- Formulaire de contact -->
+        <div class="contact-form">
+            <h2>Get in Touch</h2>
+            <form action="#" method="post">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email address" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 InfraRepair Technologies. All rights reserved.</p>
+    </footer>
+</body>
+</html>
